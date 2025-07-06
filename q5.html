@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<head>
+
+</head>
+
+<body>
+    <span style="font-size: 70px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">did tencell make infectious smiles?(y/n)</span>
+    <input id="txt" type="text" style="width: 500px;color: rgb(1, 23, 24); font-size: xx-large;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"/>
+    <button onmousedown="Check()">Check Awnser</button>
+    <a id="link" style="visibility: hidden;" href="q6.html">Next question</a>
+    <img src="https://tr.rbxcdn.com/fb7cbe6d6560c09f929e27a441dddb4c/352/352/Avatar/Png" style="width: 300px;height: 200px;position: relative;top: 150px; left: 1px;"/>
+    <script>
+        function Check() {
+            if (document.getElementById("txt").value == "no" ||
+                document.getElementById("txt").value == "n"
+        ) {
+                document.getElementById("txt").style.color = "green";
+                document.getElementById("link").style.visibility = "visible";
+            }
+        }
+    </script>
+</body>
+

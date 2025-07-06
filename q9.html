@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<head>
+
+</head>
+
+<body>
+    <span style="font-size: 70px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">How many checkpoints are in expedition antarctica? (not including start and finish)
+
+    </span>
+    <input id="txt" type="text" style="width: 500px;color: rgb(1, 23, 24); font-size: xx-large;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"/>
+    <button onmousedown="Check()">Check Awnser</button>
+    <a id="link" style="visibility: hidden;" href="q10.html">Next question</a>
+    <img src="https://tr.rbxcdn.com/180DAY-0dc390b57926f33f15a1c0a54e0a6109/256/256/Image/Webp/noFilter" style="width: 400px;height: 400px;position: relative;top: 150px; left: 1px;"/>
+    <script>
+        function Check() {
+            if (document.getElementById("txt").value == "4") {
+                document.getElementById("txt").style.color = "green";
+                document.getElementById("link").style.visibility = "visible";
+            }
+        }
+    </script>
+</body>

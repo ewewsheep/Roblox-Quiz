@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<head>
+
+</head>
+
+<body>
+    <span style="font-size: 70px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">What is this game?</span>
+    <input id="txt" type="text" style="width: 500px;color: rgb(1, 23, 24); font-size: xx-large;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"/>
+    <button onmousedown="Check()">Check Awnser</button>
+    <a id="link" style="visibility: hidden;" href="q5.html">Next question</a>
+    <img src="https://tr.rbxcdn.com/180DAY-40fe0f5c013d768b2025dd90653fdae9/768/432/Image/Webp/noFilter" style="width: 300px;height: 200px;position: relative;top: 150px; left: 1px;"/>
+    <script>
+        function Check() {
+            if (document.getElementById("txt").value == "natural disaster survival") {
+                document.getElementById("txt").style.color = "green";
+                document.getElementById("link").style.visibility = "visible";
+            }
+        }
+    </script>
+</body>

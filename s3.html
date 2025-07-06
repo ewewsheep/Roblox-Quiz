@@ -1,0 +1,72 @@
+<html>
+<head>
+  <style>
+    body {
+      margin: 0;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: sans-serif;
+      transition: all 1s ease;
+    }
+
+    .container {
+      text-align: center;
+      color: black;
+    }
+
+    .title {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+
+    .subtitle {
+      font-size: 1.2rem;
+      color: #000000;
+      margin-bottom: 2rem;
+    }
+
+    .start-button {
+      font-size: 1.8rem;
+      padding: 1rem 2.5rem;
+      color: black;
+      background: none;
+      border: 3px solid black;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .start-button:hover {
+      background-color: black;
+      color: white;
+    }
+  </style>
+</head>
+<body id="bdy">
+
+  <div class="container">
+    <div class="title">Roblox Quiz</div>
+    <div class="subtitle">20 questions</div>
+    <div class="subtitle">End (more coming soon)</div>
+    <button class="start-button" onclick="startQuiz('q1.html')">Restart</button>
+    <button class="start-button" onclick="startQuiz('https://www.roblox.com/users/1484257689/profile')">go to our profile</button>
+    <button class="start-button" onclick="startQuiz('https://google.com')">Leave - go to google</button>
+  </div>
+
+  <script>
+  function wait(ms = 1000) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+  }
+
+  async function startQuiz(w) {
+    document.getElementById("bdy").style = "margin: 0;background-color: rgb(0,0,0);display: flex;justify-content: center;align-items: center;height: 100vh;font-family: sans-serif;";
+    
+    await wait(1000); // Wait 1 second
+
+    window.location.href = w;
+  }
+</script>

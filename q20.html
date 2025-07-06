@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<head>
+
+</head>
+
+<body>
+    <span style="font-size: 70px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Who is this?</span>
+    <input id="txt" type="text" style="width: 500px;color: rgb(1, 23, 24); font-size: xx-large;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"/>
+    <button onmousedown="Check()">Check Awnser</button>
+    <a id="link" style="visibility: hidden;" href="s3.html">Next question</a>
+    <img src="https://th.bing.com/th/id/OIP.FiASeuKnt2NhI6Mjh9nXIQHaFj?w=230&h=180&c=7&r=0&o=7&dpr=1.1&pid=1.7&rm=3" style="width: 400px;height: 400px;position: relative;top: 150px; left: 1px;"/>
+    <script>
+        function Check() {
+            if (document.getElementById("txt").value == "preston" ||
+                document.getElementById("txt").value == "buildintogames") {
+                document.getElementById("txt").style.color = "green";
+                document.getElementById("link").style.visibility = "visible";
+            }
+        }
+    </script>
+</body>

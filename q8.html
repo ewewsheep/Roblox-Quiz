@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<head>
+
+</head>
+
+<body>
+    <span style="font-size: 70px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">what was meepcity nearly banned for?</span>
+    <input id="txt" type="text" style="width: 500px;color: rgb(1, 23, 24); font-size: xx-large;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"/>
+    <button onmousedown="Check()">Check Awnser</button>
+    <a id="link" style="visibility: hidden;" href="q9.html">Next question</a>
+    <img src="https://tr.rbxcdn.com/180DAY-bf983d6db5d489cfcd440f2ad813da18/512/512/Image/Webp/noFilter" style="width: 400px;height: 400px;position: relative;top: 150px; left: 1px;"/>
+    <script>
+        function Check() {
+            if (document.getElementById("txt").value == "parties") {
+                document.getElementById("txt").style.color = "green";
+                document.getElementById("link").style.visibility = "visible";
+            }
+        }
+    </script>
+</body>

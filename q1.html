@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<head>
+
+</head>
+
+<body>
+    <span style="font-size: 60px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">what is the roblox currency?</span>
+    <input id="txt" type="text" style="width: 500px;color: rgb(1, 23, 24); font-size: xx-large;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"/>
+    <button onmousedown="Check()">Check Awnser</button>
+    <a id="link" style="visibility: hidden;" href="q2.html">Next question</a>
+    <img src="https://tse1.mm.bing.net/th/id/OIP.YGDJSCx7WW52HFzRSVSVwwAAAA?rs=1&pid=ImgDetMain&o=7&rm=3" style="width: 200px;height: 200px;position: relative;top: 150px;"/>
+    <script>
+        function Check() {
+            if (document.getElementById("txt").value == "robux") {
+                document.getElementById("txt").style.color = "green";
+                document.getElementById("link").style.visibility = "visible";
+            }
+        }
+    </script>
+</body>

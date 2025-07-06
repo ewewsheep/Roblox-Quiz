@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<head>
+
+</head>
+
+<body>
+    <span style="font-size: 70px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">What is the shape of the roblox logo</span>
+    <input id="txt" type="text" style="width: 500px;color: rgb(1, 23, 24); font-size: xx-large;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"/>
+    <button onmousedown="Check()">Check Awnser</button> 
+    <a id="link" style="visibility: hidden;" href="q3.html">Next question</a>
+        <img src="https://th.bing.com/th/id/OIP.BcbMw170Er3JiCZBVwmt4AAAAA?w=182&h=182&c=7&r=0&o=7&dpr=1.1&pid=1.7&rm=3" style="width: 200px;height: 200px;position: relative;top: 150px;"/>
+    <script>
+        function Check() {
+            if (document.getElementById("txt").value == "square") {
+                document.getElementById("txt").style.color = "green";
+                document.getElementById("link").style.visibility = "visible";
+            }
+        }
+    </script>
+</body>
